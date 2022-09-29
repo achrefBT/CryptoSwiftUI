@@ -5,7 +5,8 @@
 ## Technologies : 
 
 The project uses SwiftUI, MVVM Architecture, CoreData and Combine. Live cryptocurrency data is downloaded from CoinGecko API.
- 
+
+Credit : https://www.youtube.com/c/SwiftfulThinking 
  
  
  ## CI/CD (Fastlane + Jenkins) Followed Tutorials: 

@@ -16,5 +16,7 @@ Credit : https://www.youtube.com/c/SwiftfulThinking
  https://medium.com/@sumit16.kumar/ci-cd-using-fastlane-jenkins-ios-69c86ae0cdcc
  
  https://www.userdesk.io/blog/continuous-delivery-for-i-os-applications-using-jenkins-and-fastlane/
+ 
+ https://medium.com/@priya_talreja/ci-cd-in-ios-using-jenkins-and-fastlane-7b0f9218de8f
 
 ![image](https://user-images.githubusercontent.com/36794199/193008332-356376f6-60cd-4e89-aeae-6864dcef0410.png)

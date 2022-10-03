@@ -2,12 +2,15 @@
  
  Full source code for the SwiftUI Crypto App.
  
+ 
 ## Technologies : 
 
 The project uses SwiftUI, MVVM Architecture, CoreData and Combine. Live cryptocurrency data is downloaded from CoinGecko API.
 
 Credit : https://www.youtube.com/c/SwiftfulThinking 
  
+Also, we have implemnteded CI/CD to this project using Fastlane & Jenkins
+
  
  ## CI/CD (Fastlane + Jenkins) Followed Tutorials: 
  

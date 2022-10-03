@@ -1,0 +1,56 @@
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+skip_docs
+
+# iOS build - Fill below configuration input as per your project need and replace dummy inputs with actual one.
+# For more information on build settings , see:
+# https://docs.fastlane.tools/actions/build_app/#build_app
+
+app_name = "FastlaneSample"
+scheme = "FastlaneSample-Test"
+project = "FastlaneSample.xcodeproj"
+workspace = "FastlaneSample.xcworkspace"
+target = "FastlaneSample"
+bundle_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+
+# The configuration to use when building the app. Defaults to 'Release'
+build_config = "Development"
+clean_build = "false"
+
+# Method used to export the archive. 
+# Valid values are: app-store, ad-hoc, package, enterprise, development, developer-id
+export_method = "app-store"
+
+# Code signing identities
+codesign_certificate = "Apple Distribution: Fastlane Sample (SMA123X45Z)"
+provisioning_profile = "fastlanesampleappstore"
+
+# Unit test case
+test_scheme = "FastlaneSample-Dev"
+
+# Upload/Distribution
+distribution = "testflight"
+groups = "UAT Test Team"
+
+# For firebase/testfairy/appcenter etc
+api_key = "DISTRIBUTION_API_TOKEN"
+
+# Push changes
+remote_branch = "SK/feature/CICD_Integration"
+release_notes = "FastlaneSample v1.0.0 Release\nTest build from automated CI-CD"
+
+# Publish build
+channel = "teams"
+webhook_url = "https://fastlanesample.webhook.office.com/webhookb2/a7a0ghu182w77378363/63g7732/"
+
+# Output build path
+output_directory_path = ENV["PWD"] + "/build/"
+
+# Project directory
+project_directory = ENV["PWD"] + "/reports/"
+
+# Output build name
+output_build_name = ""

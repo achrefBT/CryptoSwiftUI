@@ -11,6 +11,7 @@ Credit : https://www.youtube.com/c/SwiftfulThinking
  
 Also, we have implemnteded CI/CD to this project using Fastlane & Jenkins
 
+And, we have added the unit test using XCTest
  
  ## CI/CD (Fastlane + Jenkins) Followed Tutorials: 
  
@@ -23,3 +24,7 @@ Also, we have implemnteded CI/CD to this project using Fastlane & Jenkins
  https://medium.com/@priya_talreja/ci-cd-in-ios-using-jenkins-and-fastlane-7b0f9218de8f
 
 ![image](https://user-images.githubusercontent.com/36794199/193008332-356376f6-60cd-4e89-aeae-6864dcef0410.png)
+
+## Unit Testing : XC Test 
+
+https://www.youtube.com/playlist?list=PLMRqhzcHGw1ZLLvLwuW8AP3n-A3nsRn9P

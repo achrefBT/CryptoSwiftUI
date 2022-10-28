@@ -96,4 +96,28 @@ class DetailViewModel: ObservableObject {
         
         return (overviewArray, additionalArray)
     }
+    
+    // ---------- Testing Purpose --------
+    
+    var httpClient: HTTPClientProtocol!
+    @Published var coinDetail : CoinDetailModel
+
+    init(httpClient: HTTPClientProtocol) {
+        self.httpClient = httpClient
+    }
+    
+    func fetchCoinDetail() async throws {
+        let urlString = "https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false"
+        
+        guard let url = URL(string: urlString) else {
+            throw HttpError.badURL
+        }
+        
+        let coinDetailResponse: CoinDetailModel = try await httpClient.fetch(url: url)
+        
+        DispatchQueue.main.async {
+            self.coinDetail = coinDetailResponse
+        }
+    }
+
 }
